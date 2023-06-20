@@ -16,5 +16,13 @@ namespace Proyecto_SQL
         {
             InitializeComponent();
         }
+
+        private void btnEntrada_Click(object sender, EventArgs e)
+        {
+            VentanaPrincipal Ingresar = new VentanaPrincipal();
+            Ingresar.Show();
+
+            this.Hide();
+        }
     }
 }
