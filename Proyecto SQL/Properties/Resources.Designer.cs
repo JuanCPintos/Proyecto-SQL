@@ -73,6 +73,46 @@ namespace Proyecto_SQL.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap bx_edit_alt_1 {
+            get {
+                object obj = ResourceManager.GetObject("bx_edit_alt_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap bx_line_chart_1 {
+            get {
+                object obj = ResourceManager.GetObject("bx_line_chart_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap bxs_id_card_1 {
+            get {
+                object obj = ResourceManager.GetObject("bxs_id_card_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Gear {
+            get {
+                object obj = ResourceManager.GetObject("Gear", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Rectangle_8__1_ {
             get {
                 object obj = ResourceManager.GetObject("Rectangle_8__1_", resourceCulture);
@@ -96,6 +136,16 @@ namespace Proyecto_SQL.Properties {
         internal static System.Drawing.Bitmap Vector {
             get {
                 object obj = ResourceManager.GetObject("Vector", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap VectorBurger {
+            get {
+                object obj = ResourceManager.GetObject("VectorBurger", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

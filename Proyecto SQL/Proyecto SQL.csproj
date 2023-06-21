@@ -125,5 +125,20 @@
   <ItemGroup>
     <None Include="Resources\Rectangle 9.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VectorBurger.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bx-edit-alt 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bx-line-chart 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bxs-id-card 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gear.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

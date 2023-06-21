@@ -13,7 +13,7 @@ namespace Proyecto_SQL
 {
     public partial class Campos : Form
     {
-        SqlConnection conexion = new SqlConnection("server=LAPTOP-RGCQJI5I\\SQLEXPRESS; database=ProyectoSQL; integrated security=true");
+        SqlConnection conexion;
 
         double monto;
         string tipo;
@@ -27,7 +27,13 @@ namespace Proyecto_SQL
         {
             InitializeComponent();
         }
-        
+        public Campos(SqlConnection conexion)
+        {
+            InitializeComponent();
+            this.conexion = conexion;
+
+        }
+
         public string Fecha()
         {
             return $"{pickerFecha.Value.Year}/{pickerFecha.Value.Month}/{pickerFecha.Value.Day}";
@@ -67,5 +73,13 @@ namespace Proyecto_SQL
 
             this.Close();
         }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            DialogResult mensaje = MessageBox.Show("¿Quiere cerrar la pestaña actual?","Atención",MessageBoxButtons.YesNo,MessageBoxIcon.Question);
+            if (mensaje == DialogResult.Yes)
+                this.Close();
+        }
+
     }
 }

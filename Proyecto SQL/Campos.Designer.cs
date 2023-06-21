@@ -34,8 +34,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.rbtIngreso = new System.Windows.Forms.RadioButton();
             this.rbtGasto = new System.Windows.Forms.RadioButton();
+            this.rbtIngreso = new System.Windows.Forms.RadioButton();
             this.pickerFecha = new System.Windows.Forms.DateTimePicker();
             this.cmbCategoria = new System.Windows.Forms.ComboBox();
             this.btnCancelar = new Proyecto_SQL.NewButton();
@@ -105,17 +105,6 @@
             this.groupBox1.TabIndex = 11;
             this.groupBox1.TabStop = false;
             // 
-            // rbtIngreso
-            // 
-            this.rbtIngreso.AutoSize = true;
-            this.rbtIngreso.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbtIngreso.Location = new System.Drawing.Point(48, 19);
-            this.rbtIngreso.Name = "rbtIngreso";
-            this.rbtIngreso.Size = new System.Drawing.Size(92, 25);
-            this.rbtIngreso.TabIndex = 0;
-            this.rbtIngreso.Text = "Ingreso";
-            this.rbtIngreso.UseVisualStyleBackColor = true;
-            // 
             // rbtGasto
             // 
             this.rbtGasto.AutoSize = true;
@@ -129,6 +118,17 @@
             this.rbtGasto.TabStop = true;
             this.rbtGasto.Text = "Gasto";
             this.rbtGasto.UseVisualStyleBackColor = true;
+            // 
+            // rbtIngreso
+            // 
+            this.rbtIngreso.AutoSize = true;
+            this.rbtIngreso.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbtIngreso.Location = new System.Drawing.Point(48, 19);
+            this.rbtIngreso.Name = "rbtIngreso";
+            this.rbtIngreso.Size = new System.Drawing.Size(92, 25);
+            this.rbtIngreso.TabIndex = 0;
+            this.rbtIngreso.Text = "Ingreso";
+            this.rbtIngreso.UseVisualStyleBackColor = true;
             // 
             // pickerFecha
             // 
@@ -157,6 +157,7 @@
             this.cmbCategoria.Name = "cmbCategoria";
             this.cmbCategoria.Size = new System.Drawing.Size(339, 29);
             this.cmbCategoria.TabIndex = 13;
+            this.cmbCategoria.Text = "Otro";
             // 
             // btnCancelar
             // 
@@ -175,6 +176,7 @@
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(76)))), ((int)(((byte)(119)))));
             this.btnCancelar.UseVisualStyleBackColor = false;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // btnGuardar
             // 
@@ -202,15 +204,15 @@
             this.txtDetalle.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(150)))), ((int)(((byte)(186)))));
             this.txtDetalle.BorderRadius = 15;
             this.txtDetalle.BorderSize = 2;
-            this.txtDetalle.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDetalle.ForeColor = System.Drawing.Color.DimGray;
+            this.txtDetalle.Font = new System.Drawing.Font("Century Gothic", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDetalle.ForeColor = System.Drawing.Color.Black;
             this.txtDetalle.Location = new System.Drawing.Point(243, 239);
             this.txtDetalle.Margin = new System.Windows.Forms.Padding(4);
             this.txtDetalle.Multiline = false;
             this.txtDetalle.Name = "txtDetalle";
             this.txtDetalle.Padding = new System.Windows.Forms.Padding(7);
             this.txtDetalle.PasswordChar = false;
-            this.txtDetalle.Size = new System.Drawing.Size(340, 31);
+            this.txtDetalle.Size = new System.Drawing.Size(340, 36);
             this.txtDetalle.TabIndex = 7;
             this.txtDetalle.Texts = "";
             this.txtDetalle.UnderlinedStyle = false;
@@ -222,15 +224,15 @@
             this.txtMonto.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(150)))), ((int)(((byte)(186)))));
             this.txtMonto.BorderRadius = 15;
             this.txtMonto.BorderSize = 2;
-            this.txtMonto.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMonto.ForeColor = System.Drawing.Color.DimGray;
+            this.txtMonto.Font = new System.Drawing.Font("Century Gothic", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMonto.ForeColor = System.Drawing.Color.Black;
             this.txtMonto.Location = new System.Drawing.Point(243, 8);
             this.txtMonto.Margin = new System.Windows.Forms.Padding(4);
             this.txtMonto.Multiline = false;
             this.txtMonto.Name = "txtMonto";
             this.txtMonto.Padding = new System.Windows.Forms.Padding(7);
             this.txtMonto.PasswordChar = false;
-            this.txtMonto.Size = new System.Drawing.Size(340, 31);
+            this.txtMonto.Size = new System.Drawing.Size(340, 36);
             this.txtMonto.TabIndex = 5;
             this.txtMonto.Texts = "";
             this.txtMonto.UnderlinedStyle = false;
@@ -240,7 +242,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
-            this.ClientSize = new System.Drawing.Size(604, 361);
+            this.ClientSize = new System.Drawing.Size(600, 357);
             this.ControlBox = false;
             this.Controls.Add(this.cmbCategoria);
             this.Controls.Add(this.pickerFecha);
