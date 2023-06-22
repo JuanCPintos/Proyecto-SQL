@@ -13,7 +13,8 @@ namespace Proyecto_SQL
 {
     public partial class Campos : Form
     {
-        SqlConnection conexion;
+        //SqlConnection conexion;
+        SqlConnection conexion = new SqlConnection("server=LAPTOP-RGCQJI5I\\SQLEXPRESS; database=ProyectoSQL; integrated security=true");
 
         double monto;
         string tipo;
@@ -27,12 +28,12 @@ namespace Proyecto_SQL
         {
             InitializeComponent();
         }
-        public Campos(SqlConnection conexion)
-        {
-            InitializeComponent();
-            this.conexion = conexion;
+        //public Campos(SqlConnection conexion)
+        //{
+        //    InitializeComponent();
+        //    this.conexion = conexion;
 
-        }
+        //}
 
         public string Fecha()
         {

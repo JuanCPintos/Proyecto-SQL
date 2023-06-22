@@ -129,7 +129,6 @@
             this.sideBar.Name = "sideBar";
             this.sideBar.Size = new System.Drawing.Size(47, 450);
             this.sideBar.TabIndex = 13;
-            this.sideBar.MouseLeave += new System.EventHandler(this.sideBar_MouseLeave);
             // 
             // btnEditar
             // 
@@ -169,7 +168,6 @@
             this.btnBurger.TabIndex = 11;
             this.btnBurger.UseVisualStyleBackColor = true;
             this.btnBurger.Click += new System.EventHandler(this.btnBurger_Click);
-            this.btnBurger.MouseHover += new System.EventHandler(this.btnBurger_MouseHover);
             // 
             // btnGraf
             // 
@@ -196,7 +194,6 @@
             this.btnUser.TabIndex = 13;
             this.btnUser.UseVisualStyleBackColor = false;
             this.btnUser.Visible = false;
-            this.btnUser.Click += new System.EventHandler(this.btnUser_Click);
             this.btnUser.MouseHover += new System.EventHandler(this.btnUser_MouseHover);
             // 
             // pictureBox3

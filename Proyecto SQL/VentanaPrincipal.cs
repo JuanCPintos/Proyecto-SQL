@@ -8,12 +8,15 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Configuration;
 
 namespace Proyecto_SQL
 {
     public partial class VentanaPrincipal : Form
     {
         SqlConnection conexion = new SqlConnection("server=LAPTOP-RGCQJI5I\\SQLEXPRESS; database=ProyectoSQL; integrated security=true");
+        
+        string connectionString = ConfigurationManager.ConnectionStrings["MiConexion"].ConnectionString;
 
         public VentanaPrincipal()
         {
@@ -22,7 +25,7 @@ namespace Proyecto_SQL
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-            Campos Ingreso = new Campos(conexion);
+            Campos Ingreso = new Campos();
             Ingreso.Show();
         }
 
@@ -62,11 +65,7 @@ namespace Proyecto_SQL
 
         }
 
-        private void btnBurger_MouseHover(object sender, EventArgs e)
-        {
-            
-            
-        }
+        
 
         private void btnBurger_Click(object sender, EventArgs e)
         {
@@ -74,14 +73,12 @@ namespace Proyecto_SQL
             
         }
 
-        private void sideBar_MouseLeave(object sender, EventArgs e)
-        {
-
-        }
+        
 
         private void btnEditar_Click(object sender, EventArgs e)
         {
-
+            Editar editar = new Editar();
+            editar.Show();
         }
 
         public void desplegar()
@@ -127,9 +124,6 @@ namespace Proyecto_SQL
             plegar();
         }
 
-        private void btnUser_Click(object sender, EventArgs e)
-        {
-
-        }
+        
     }
 }
